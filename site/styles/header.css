@@ -50,9 +50,9 @@ header div span {
 	background-image: url(../images/header/logo.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 285px 125px;
-	width: 285px;
-	height: 125px;
+	background-size: 235px 95px;
+	width: 235px;
+	height: 95px;
 }
 
 header article {
@@ -79,4 +79,28 @@ header article p {
 
 header article p strong {
 	display: block;
+}
+
+header a.youtube {
+	display: block;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	margin-top: -90px;
+	left: 50%;
+	margin-left: -70px;
+  	background-color: rgba(255, 255, 255, 0.7);
+	background-image: url(../images/header/icons/icon-youtube.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 80px 60px;
+	width: 180px;
+	height: 140px;
+	text-decoration: none;
+}
+
+header a.youtube span {
+	display: inline-block;
+	padding-top: 100px;
+	color:#1c4566;
 }
