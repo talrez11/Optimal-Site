@@ -97,10 +97,32 @@ header a.youtube {
 	width: 180px;
 	height: 140px;
 	text-decoration: none;
+	transition:all 0.3s;
+}
+
+header a.youtube:hover {
+	background-color: white;
 }
 
 header a.youtube span {
 	display: inline-block;
 	padding-top: 100px;
 	color:#1c4566;
+}
+
+header div.form_wrap {
+	display: block;
+	text-align: center;
+  	padding: 0px calc((100vw - 1200px) / 2);
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+	width: 100%;
+    background-color: rgba(33, 82, 116, 0.8);
+}
+
+header div.form_wrap h2 {
+	display: block;
+	color:white;
+	font-weight: 300;
 }
