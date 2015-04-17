@@ -43,8 +43,17 @@
 						text_id="contact_form"
 						/>
 				</div>
-
 			</header>
+			<!-- About us Section -->
+			<div class="wrap">
+				<span><cms:text constant="statement"/></span>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about_article"
+					
+					/>
+			</div>
 		</body>
 	</html>
 </document>
