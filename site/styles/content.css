@@ -25,10 +25,7 @@ a.phone {
 	padding-bottom: 10px;
 	padding-left: 40px;
 	padding-right: 30px;
-	background: url('../images/header/icons/icon-phone-white.svg'),linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);
-	background-repeat: no-repeat,no-repeat;
-	background-position: 45px 40px ,center top;
-	background-size: 40px 40px,auto 100%;
+	background:linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);
 	border: 1px solid #15a51d;
 	text-decoration: none;
 	font-size: 2.2em;
@@ -36,6 +33,20 @@ a.phone {
 	font-weight: bold;
 	box-shadow: 3px 3px 2px rgba(213, 189, 189, 0.3);
 	border-radius: 8px;
+	position: relative;
+}
+
+a.phone:before {
+	content: "";
+	position: absolute;
+	top:40px;
+	left: 50px;
+	background-image: url(../images/header/icons/icon-phone-white.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px; 
 }
 
 a.phone span {
