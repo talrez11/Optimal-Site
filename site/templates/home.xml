@@ -35,6 +35,14 @@
 				<a href="#" class="youtube">
 					<span><cms:text constant="video_title"/></span>
 				</a>
+				<div class="form_wrap">
+					<h2><cms:text constant="form_title"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
 
 			</header>
 		</body>
