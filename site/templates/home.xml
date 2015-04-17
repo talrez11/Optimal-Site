@@ -32,6 +32,9 @@
 					<span><cms:text constant="phone_title"/></span>
 					<cms:text constant="phone"/>
 				</a>
+				<a href="#" class="youtube">
+					<span><cms:text constant="video_title"/></span>
+				</a>
 
 			</header>
 		</body>
