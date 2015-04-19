@@ -42,19 +42,6 @@ header div a {
 
 }
 
-header div > span {
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-image: url(../images/header/logo.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 235px 95px;
-	width: 235px;
-	height: 95px;
-}
-
 header article {
 	display: block;
 	width: 50%;
@@ -110,20 +97,6 @@ header a.youtube span {
 	color:#1c4566;
 }
 
-header div.form_wrap {
-	display: block;
-	text-align: center;
-	position: absolute;
-	bottom:0px;
-	left: 0px;
-	width: 100%;
-    background-color: rgba(33, 82, 116, 0.8);
-}
 
-header div.form_wrap h2 {
-	display: block;
-	color:white;
-	font-weight: 300;
-}
 
 
