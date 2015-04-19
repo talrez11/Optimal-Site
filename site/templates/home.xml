@@ -5,11 +5,13 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control,animation_chain"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<header>
+
 				<div>
 					<a
 					href="'tel:'.urlencode(Language::getText('phone'))"
@@ -19,6 +21,7 @@
 					</a>
 					<span class="logo"></span>
 				</div>
+
 				<cms:module
 					name="articles"
 					action="show"
@@ -32,9 +35,14 @@
 					<span><cms:text constant="phone_title"/></span>
 					<cms:text constant="phone"/>
 				</a>
-				<a href="#" class="youtube">
-					<span><cms:text constant="video_title"/></span>
-				</a>
+				<!-- youtube dialog -->
+				<cms:module
+						name="youtube"
+						action="show_list"
+						text_id="optimal_video"
+						template="parts/video.xml"
+						/>
+
 				<div class="form_wrap">
 					<h2><cms:text constant="form_title"/></h2>
 					<cms:module
@@ -60,7 +68,7 @@
 				<cms:module
 					name="articles"
 					action="show"
-					text_id="benefits_article"
+					text_id="benefits1_article"
 					template="parts/article.xml"
 					/>
 
@@ -100,7 +108,7 @@
 				</div>
 			</div>
 			<!--BOTTOM SECTION  -->
-			<div class="wrap">
+			<div class="bottom">
 				<span class="logo"></span>
 				<cms:module
 					name="articles"
@@ -126,7 +134,7 @@
 				</div>
 			</div>
 			<footer>
-				<span></span>
+				<span><cms:text constant="copyright"/></span>
 			</footer>
 		</body>
 	</html>
