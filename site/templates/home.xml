@@ -13,12 +13,21 @@
 			<header>
 
 				<div>
-					<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
-					cms:eval="href"
-						>
-					<cms:text constant="phone"/>
-					</a>
+					<cms:desktop>
+						<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+							>
+						<cms:text constant="phone"/>
+						</a>
+					</cms:desktop>
+					<cms:mobile>
+						<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+							>
+						</a>
+					</cms:mobile>
 					<span class="logo"></span>
 				</div>
 
@@ -27,21 +36,41 @@
 					action="show"
 					text_id="header_article"
 					/>
-				<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
-					cms:eval="href"
-					class="phone"
-					>
-					<span><cms:text constant="phone_title"/></span>
-					<cms:text constant="phone"/>
-				</a>
-				<!-- youtube dialog -->
-				<cms:module
-						name="youtube"
-						action="show_list"
-						text_id="optimal_video"
-						template="parts/video.xml"
-						/>
+				<cms:desktop>
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<span><cms:text constant="phone_title"/></span>
+						<cms:text constant="phone"/>
+					</a>
+					<!-- youtube dialog -->
+					<cms:module
+							name="youtube"
+							action="show_list"
+							text_id="optimal_video"
+							template="parts/video.xml"
+							/>
+				</cms:desktop>
+
+				<cms:mobile>
+					<!-- youtube dialog -->
+					<cms:module
+							name="youtube"
+							action="show_list"
+							text_id="optimal_video"
+							template="parts/video.xml"
+							/>
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<span><cms:text constant="phone_title"/></span>
+						<cms:text constant="phone"/>
+					</a>
+				</cms:mobile>
 
 				<div class="form_wrap">
 					<h2><cms:text constant="form_title"/></h2>
