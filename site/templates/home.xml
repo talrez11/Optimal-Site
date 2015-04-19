@@ -32,8 +32,52 @@
 					<span><cms:text constant="phone_title"/></span>
 					<cms:text constant="phone"/>
 				</a>
-
+				<a href="#" class="youtube">
+					<span><cms:text constant="video_title"/></span>
+				</a>
+				<div class="form_wrap">
+					<h2><cms:text constant="form_title"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
 			</header>
+			<!-- About us Section -->
+			<div class="wrap">
+				<span><cms:text constant="statement"/></span>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about_article"
+					template="parts/article.xml"
+					
+					/>				
+			</div>
+			<!-- Benefits Section -->
+			<div class="white">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="benefits_article"
+					template="parts/article.xml"
+					
+					/>
+
+				<div class="animation">
+				</div>
+				
+				<h2><cms:text constant="benefits_title"/></h2>
+				<span><cms:text constant="benefit1"/></span>
+				<span><cms:text constant="benefit2"/></span>
+				<span><cms:text constant="benefit3"/></span>
+				<span><cms:text constant="benefit4"/></span>	
+			</div>
+			<!-- Video Section -->
+			<div class="blue">
+				
+			</div>
 		</body>
 	</html>
 </document>
