@@ -263,7 +263,7 @@ div.about_article ul li:nth-of-type(4):before {
 }
 
 div.about_article ul li:nth-of-type(5) {
-	background-position: right 50px;
+	background-position: right 40px;
 	padding-top: 30px;
 }
 
@@ -498,6 +498,100 @@ div.dialog div.command_bar {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 10px;
+}
+
+/*Tablet Version*/
+
+
+@media all and (max-width: 1024px) and (min-width: 768px){
+span.logo {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+header article {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+header a.youtube {
+	left: 40%;
+	margin-left: 0px;
+}
+
+a.phone {
+	margin-right: 15px;
+}
+
+div.wrap div.about_article {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div.wrap:before {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	background-image: url(../images/about/ballon.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 250px 250px;
+	border-radius: 50%;
+	border: 2px solid rgb(1, 159, 227);
+	width: 250px;
+	height: 250px
+}
+
+div.benefits1_article {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: right;
+	width:calc(50% - 30px);
+}
+
+div.white span {
+	padding-top: 110px;
+}
+
+div.white span:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -77px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px 99.75px;
+	border: 2px solid #1472a4;
+	width: 150px;
+	height: 99.75px;
+}
+
+div.blue div.video_article {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+	width: calc(50% - 30px);
+}
+
+div.blue div.youtube iframe {
+	width: 400px;
+}
+
+div.bottom {
+	height: 680px;
+}
+
+div.bottom_article {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: calc(50% - 30px);
+}
+
 }
 
 
