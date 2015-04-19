@@ -101,7 +101,7 @@
 			</div>
 			<!--BOTTOM SECTION  -->
 			<div class="wrap">
-				<span></span>
+				<span class="logo"></span>
 				<cms:module
 					name="articles"
 					action="show"
@@ -125,6 +125,9 @@
 						/>
 				</div>
 			</div>
+			<footer>
+				<span></span>
+			</footer>
 		</body>
 	</html>
 </document>
