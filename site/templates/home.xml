@@ -52,8 +52,8 @@
 					action="show"
 					text_id="about_article"
 					template="parts/article.xml"
-					
-					/>				
+
+					/>
 			</div>
 			<!-- Benefits Section -->
 			<div class="white">
@@ -62,21 +62,68 @@
 					action="show"
 					text_id="benefits_article"
 					template="parts/article.xml"
-					
 					/>
 
 				<div class="animation">
 				</div>
-				
+
 				<h2><cms:text constant="benefits_title"/></h2>
 				<span><cms:text constant="benefit1"/></span>
 				<span><cms:text constant="benefit2"/></span>
 				<span><cms:text constant="benefit3"/></span>
-				<span><cms:text constant="benefit4"/></span>	
+				<span><cms:text constant="benefit4"/></span>
 			</div>
 			<!-- Video Section -->
 			<div class="blue">
-				
+				<h2><cms:text constant="video_section_title"/></h2>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="video_article"
+					template="parts/article.xml"
+					/>
+
+				<div class="youtube">
+					<cms:module
+						name="youtube"
+						action="show"
+						text_id="optimal_video"
+						cms:eval="id"
+						embed="1"
+						width="500"
+						height="312"
+						player_id="video_player"
+						theme="light"
+						autohide="0"
+						show_related="0"
+					/>
+				</div>
+			</div>
+			<!--BOTTOM SECTION  -->
+			<div class="wrap">
+				<span></span>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="bottom_article"
+					template="parts/article.xml"
+					/>
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<span><cms:text constant="phone_title"/></span>
+					<cms:text constant="phone"/>
+				</a>
+				<div class="form_wrap">
+					<h2><cms:text constant="form_title"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
 			</div>
 		</body>
 	</html>
