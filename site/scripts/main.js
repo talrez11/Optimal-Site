@@ -48,7 +48,35 @@ Site.is_mobile = function() {
 /**
  * Function called when document and images have been completely loaded.
  */
+
+ function dialog() {
+
+	// calling the dialog.
+	var video_dialog = new Dialog();
+
+	//Modefy the dialog.
+
+	video_dialog.setTitle(language_handler.getText(null, 'dialog_video_title'));
+	video_dialog.setSize(640, 330);
+
+	$('a.youtube').not('.mobile').click(function(event) {
+
+		// prevent link from working.
+		event.preventDefault();
+
+		// set content from URL and show it.
+		video_dialog.setContentFromURL($(this).attr('href'));
+		video_dialog.showWhenReady();
+	});
+}
+
 Site.on_load = function() {
+
+	/*
+	*** Calling the function dialog.
+	*/
+
+	dialog();
 };
 
 
