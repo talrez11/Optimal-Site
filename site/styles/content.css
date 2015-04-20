@@ -178,16 +178,16 @@ div.wrap {
 div.wrap:before {
 	content: "";
 	position: absolute;
-	top: 35%;
+	top: 37%;
 	left: 38%;
 	background-image: url(../images/about/ballon.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 300px 300px;
+	background-size: 250px 250px;
 	border-radius: 50%;
-	border: 2px solid rgb(1, 159, 227);;
-	width: 300px;
-	height: 300px;
+	border: 2px solid rgb(1, 159, 227);
+	width: 250px;
+	height: 250px
 }
 
 div.wrap span {
