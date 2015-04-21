@@ -446,6 +446,7 @@ div.blue div.youtube {
 div.bottom {
 	display: block;
 	padding:0px calc((100vw - 1200px) / 2);
+	background-color: #e5e7eb;
 	background-image: url(../images/footer/footer_image.jpg);
 	background-repeat:no-repeat;
 	background-position: center center;
@@ -454,15 +455,15 @@ div.bottom {
 	position: relative;
 }
 
-div.bottom > span:last-of-type {
-	display: block;
-	color:red;
-	font-weight: 700;
-}
-
 div.bottom_article {
 	display: block;
 	width: 50%;
+}
+
+div.bottom_article p:last-of-type {
+	display: block;
+	color:red;
+	font-weight: bold;
 }
 
 
@@ -507,6 +508,11 @@ div.dialog div.command_bar {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 10px;
+}
+
+.inner_content {
+	text-align: center;
+	font-size: 1.8em;
 }
 
 /*Tablet Version*/
@@ -593,11 +599,6 @@ div.blue div.youtube iframe {
 
 div.bottom {
 	height: 700px;
-}
-
-div.bottom > span:last-of-type {
-	padding-left: 15px;
-	padding-right: 15px;
 }
 
 div.bottom_article {

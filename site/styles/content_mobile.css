@@ -555,16 +555,6 @@ div.bottom {
 	position: relative;
 }
 
-div.bottom > span:last-of-type {
-	display: block;
-	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
-	color:red;
-	font-weight: 700;
-	font-size: 0.8em;
-}
-
 div.bottom .form_wrap {
 	margin-top:290px;
 
@@ -574,6 +564,13 @@ div.bottom_article {
 	display: block;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+div.bottom_article p:last-of-type {
+	display: block;
+	font-size: 0.8em;
+	color:red;
+	font-weight: bold;
 }
 
 /*FOOTER*/
