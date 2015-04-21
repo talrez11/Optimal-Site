@@ -153,6 +153,7 @@
 					<span><cms:text constant="phone_title"/></span>
 					<cms:text constant="phone"/>
 				</a>
+				<span><cms:text constant="message"/></span>
 				<div class="form_wrap">
 					<h2><cms:text constant="form_title"/></h2>
 					<cms:module
