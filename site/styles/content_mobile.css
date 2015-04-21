@@ -607,3 +607,13 @@ footer span a {
 	color:#449bb5;
 }
 
+div.dialog div.title {
+	text-align: center;
+}
+
+.inner_content {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+
