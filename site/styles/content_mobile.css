@@ -555,6 +555,16 @@ div.bottom {
 	position: relative;
 }
 
+div.bottom > span:last-of-type {
+	display: block;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	color:red;
+	font-weight: 700;
+	font-size: 0.8em;
+}
+
 div.bottom .form_wrap {
 	margin-top:290px;
 

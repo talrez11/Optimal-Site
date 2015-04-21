@@ -450,14 +450,22 @@ div.bottom {
 	background-repeat:no-repeat;
 	background-position: center center;
 	background-size:1920px 700px;
-	height: 630px;
+	height: 700px;
 	position: relative;
+}
+
+div.bottom > span:last-of-type {
+	display: block;
+	color:red;
+	font-weight: 700;
 }
 
 div.bottom_article {
 	display: block;
 	width: 50%;
 }
+
+
 
 /*FOOTER*/
 
@@ -584,13 +592,23 @@ div.blue div.youtube iframe {
 }
 
 div.bottom {
-	height: 680px;
+	height: 700px;
+}
+
+div.bottom > span:last-of-type {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 div.bottom_article {
 	padding-left: 15px;
 	padding-right: 15px;
 	width: calc(50% - 30px);
+}
+
+.form_wrap {
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 }
