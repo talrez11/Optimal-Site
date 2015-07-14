@@ -72,11 +72,18 @@ Site.is_mobile = function() {
 
 Site.on_load = function() {
 
-	/*
-	*** Calling the function dialog.
-	*/
-
+	if (!Site.is_mobile()){
 	dialog();
+	}
+	var thankyou = "/thankyou" + window.location.search;
+	// handle analytics event
+	$('form').on('analytics-event', function(event, data) {
+		if (!data.error)
+			dataLayer.push({
+            	'event':'leadSent'
+            });
+		window.location.replace(thankyou);
+	});
 };
 
 

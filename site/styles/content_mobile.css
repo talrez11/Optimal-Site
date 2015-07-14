@@ -616,4 +616,7 @@ div.dialog div.title {
 	font-size: 1.8em;
 }
 
+header.thankyou {
+	min-height: 555px;
+}
 
